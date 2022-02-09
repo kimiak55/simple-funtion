@@ -1,0 +1,20 @@
+list=['water','soda','beer']
+code , basket=[],[]
+client=''
+for codes in range (1,len(list)+1):
+    code.append(str(codes))
+while client != 0:
+    if client in code:
+        item=list[int(client)-1]
+        if item in basket:
+            basket.remove(item)
+            print('{} removed from your basket'.format(item))
+            print(basket)
+        else:
+            basket.append(item)
+            print ('{} added in your basket'.format(item))
+            print(basket)
+    else:
+        for a,b in enumerate(list):
+            print ('{} : {}'.format(a+1,b))
+    client=input('type the code:')
