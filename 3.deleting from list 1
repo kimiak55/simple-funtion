@@ -1,0 +1,10 @@
+a=[2,6,1,9,
+   23,51,99,11,
+   13,32,56,71,
+   11,81,1,60]
+minimum , maximum = 10,80
+for index in range (len(a)-1,-1,-1):
+    b=a[index]
+    if b<minimum or b>maximum:
+        del a[index]
+print(a)
