@@ -1,0 +1,10 @@
+a=[2,6,1,9,
+   23,51,99,11,
+   13,32,56,71,
+   11,81,1,60]
+minimum , maximum = 10,80
+b=len(a)-1
+for index,value in enumerate (reversed(a)):
+    if value<minimum or value>maximum:
+        del a[b-index]
+print(a)
