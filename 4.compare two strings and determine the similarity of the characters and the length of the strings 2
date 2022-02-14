@@ -1,0 +1,6 @@
+a='LISTEN'
+b='silent'
+if sorted(a.lower()) == sorted(b.lower()):
+    print('true')
+else:
+    print('false')
