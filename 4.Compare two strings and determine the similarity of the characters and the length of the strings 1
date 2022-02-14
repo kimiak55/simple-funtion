@@ -1,0 +1,11 @@
+a='LISTEN'
+b='silent'
+c=0
+if len(a)==len(b):
+    for item in a.lower():
+        if item in b.lower():
+            c+=1
+if c==len(b):
+    print('true')
+else:
+    print('false')
