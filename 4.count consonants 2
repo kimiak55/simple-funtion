@@ -1,0 +1,6 @@
+ml=str(input('enter text: '))
+sum=0
+for letter in ml.lower():
+    if letter not in 'aoieu ':
+        sum+=1
+print(sum)
