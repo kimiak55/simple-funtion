@@ -1,8 +1,6 @@
 c=[1,5,3,2,4]
-for i in range(0,len(c)-1):
-     if c[i]>c[i+1]:
-         d=c[i]
-         e=c[i+1]
-         c[i]=e
-         c[i+1]=d
-print(c)
+d=[]
+for i in range(len(c)):
+     d.append(min(c))
+     c.remove(min(c))
+print(d)
