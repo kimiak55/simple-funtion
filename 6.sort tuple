@@ -1,0 +1,12 @@
+ranking=(('oxford',2),('stan',3),('mit',1),('cam',4))
+rank=[]
+a=[]
+for item in ranking:
+    item = list(item)
+    item.reverse()
+    rank.append(item)
+rank.sort()
+for item in rank:
+    item.reverse()
+    a.append(tuple(item))
+print(tuple(rank))
