@@ -1,0 +1,8 @@
+a=(23,23,23)
+b=True
+for item in a:
+    if a[0]==item:
+        continue
+    else:
+        b = False
+print (b)
