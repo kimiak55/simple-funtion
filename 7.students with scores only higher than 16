@@ -1,0 +1,9 @@
+students={
+    'aria':[14,17,20],
+    'shima':[16,16,16],
+    'morteza':[18,19,20]
+}
+for person in students:
+    mark1,mark2,mark3=students[person]
+    if mark1>16 and mark2>16 and mark3>16:
+        print(person)
