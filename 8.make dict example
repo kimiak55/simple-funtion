@@ -1,0 +1,13 @@
+names=['negin','shirin','aria','farhad']
+ages=[22,26,24,28]
+scores=[55,85,59,60]
+situation=[]
+for i in scores:
+    if i >=60:
+        situation+=['pass']
+    else:
+        situation+=['failed']
+my_dict={}
+for q in range(0,4):
+    my_dict[names[q]]= [ages[q],scores[q],situation[q]]
+print(my_dict)
