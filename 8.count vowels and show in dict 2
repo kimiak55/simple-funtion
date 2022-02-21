@@ -1,0 +1,8 @@
+string = ' Aabcd efgh Iijkl oou mkx '
+vowels=['a','i','o','u','e']
+string=string.lower()
+my_dict={}
+for i in string:
+    if i in vowels and i not in my_dict:
+        my_dict[i]=string.count(i)
+print(my_dict)
