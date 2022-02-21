@@ -1,0 +1,10 @@
+string = ' Aabcd efgh Iijkl oou mkx '
+string=string.lower()
+a=string.count('a')
+b=string.count('i')
+c=string.count('o')
+d=string.count('u')
+e=string.count('e')
+co=[a,b,c,d,e]
+my={'a':a,'i':b,'o':c,'u':d,'e':e}
+print(my)
