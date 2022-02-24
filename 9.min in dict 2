@@ -1,0 +1,11 @@
+scores={
+        'physics':17,
+        'math':15,
+        'history':20
+}
+a=scores.keys()
+b=scores.values()
+minimum=min(b)
+for lesson in scores:
+        if scores[lesson]==minimum:
+                print(lesson)
