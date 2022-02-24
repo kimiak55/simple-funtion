@@ -1,0 +1,9 @@
+scores={
+        'physics':17,
+        'math':15,
+        'history':20
+}
+a=list(scores.keys())
+b=list(scores.values())
+minimum=a[b.index(min(b))]
+print(minimum)
