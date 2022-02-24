@@ -1,0 +1,29 @@
+from asyncio import futures
+from test import foodstuffs, recipies
+
+key=list(recipies.keys())
+value=list(recipies.values())
+print ('list:')
+for foodname in key:
+    print ('{0}) {1}'.format(key.index(foodname)+1,foodname))
+listkharid=[]
+choosenfood=int(input('choose from list:'))
+if choosenfood!=0:
+    for stuff in value[choosenfood-1]:
+        if stuff not in foodstuffs:
+            a=0
+        else:
+            a=foodstuffs[stuff]
+        b=recipies[key[choosenfood-1]][stuff]
+        if a>b:
+            c='available'
+        else:
+            c='not available'
+        print (stuff, a , '/', b , c)
+        if c=='not available':
+            kharid=(stuff,b-a)
+            listkharid.append(kharid)
+print('-'*12)
+print ('list kharid:')
+for x,y in listkharid:
+    print(x,'   ',y)
