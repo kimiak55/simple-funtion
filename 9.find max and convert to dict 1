@@ -1,0 +1,13 @@
+numbers=[
+        [3,5,2,7],
+        [33,11,22,13],
+        [-15,-3,-17,-7],
+        [12.5,19.98,17.73,15.22]
+]
+list1=[]
+for i in numbers:
+    maximum=max(i)
+    name='row {} max'.format(numbers.index(i))
+    tuple1=(name,maximum)
+    list1.append(tuple1)
+print(dict(list1))
