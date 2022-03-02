@@ -1,0 +1,17 @@
+operation=['addition','subtraction','multiplication','division']
+while True:
+    num1=float(input('enter first number: '))
+    num2=float(input('enter second number: '))
+    print('list of operations:')
+    for i in range (len(operation)):
+        print('{}. {}'.format(i+1 , operation[i]))
+    operate=int(input('choose the number of operation:'))-1
+    if operate==0:
+        result=num1+num2
+    elif operate==1:
+        result=num1-num2
+    elif operate==2:
+        result=num1*num2
+    else:
+        result=num1/num2
+    print(result)
