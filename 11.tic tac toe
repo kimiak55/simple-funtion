@@ -1,0 +1,73 @@
+board={'7':' ', '8':' ','9':' ',
+       '4':' ', '5':' ','6':' ',
+       '1':' ', '2':' ','3':' '}
+print('player 1 : X')
+print('player 1 : O')
+
+def print_board():
+    print(board['7'],'|',board['8'],'|',board['9'])
+    print('-','+','-','+','-')
+    print(board['4'],'|',board['5'],'|',board['6'])
+    print('-','+','-','+','-')
+    print(board['1'],'|',board['2'],'|',board['3'])
+
+def win():
+    if board['7'] == board['8'] == board['9'] !=' ':
+        print(board['7'], 'win')
+        return True
+    elif board['4'] == board['5'] == board['6'] !=' ':
+        print(board['4'], 'win')
+        return True
+    elif board['1'] == board['2'] == board['3'] !=' ':
+        print(board['1'], 'win')
+        return True
+    elif board['1'] == board['4'] == board['7'] !=' ':
+        print(board['1'], 'win')
+        return True
+    elif board['2'] == board['5'] == board['8'] !=' ':
+        print(board['2'], 'win')
+        return True
+    elif board['3'] == board['6'] == board['9'] !=' ':
+        print(board['3'], 'win')
+        return True
+    elif board['1'] == board['5'] == board['9'] !=' ':
+        print(board['1'], 'win')
+        return True
+    elif board['7'] == board['5'] == board['3'] !=' ':
+        print(board['7'], 'win')
+        return True
+    elif ' ' in list(board.values()):
+        return False
+    elif ' ' not in list(board.values()):
+        print ('no one wins')
+        return True
+
+
+def choice1():
+    while True:
+        c=input('choice from 1 to 9: ')
+        if board[c] != ' ':
+            print ('it has taken')
+            
+        else:
+            board[c]='X'
+            break
+
+def choice2():
+    while True:
+        d=input('choice from 1 to 9: ')
+        if board[d] != ' ':
+            print ('it has taken')  
+        else:
+            board[d]='O'
+            break
+
+while True:
+    print_board()
+    choice1()
+    print_board()
+    if win():
+        break
+    choice2()
+    if win():
+        break
