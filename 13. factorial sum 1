@@ -1,0 +1,14 @@
+def factor(num):
+    sum = 0
+    while num > 0:
+        a = 1
+        b = 1
+        while b <= num:
+            a *= b
+            b += 1
+        sum += a
+        num -= 1
+    return sum
+
+c = int(input('enter num: '))
+print (factor(c))
